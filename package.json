@@ -4,7 +4,7 @@
 	"description": "Utility function to load nyc configuration",
 	"main": "index.js",
 	"scripts": {
-		"pretest": "xo",
+		"pretest": "xo --ignore 'test/fixtures/extends/invalid.*' --ignore tap-snapshots/",
 		"test": "tap",
 		"snap": "npm test -- --snapshot",
 		"release": "standard-version"
@@ -32,16 +32,30 @@
 		"semver": "^6.3.0",
 		"standard-version": "^7.0.0",
 		"tap": "^14.10.5",
-		"xo": "^0.25.3"
+		"xo": "^1.2.3"
 	},
 	"xo": {
-		"ignores": [
-			"test/fixtures/extends/invalid.*"
-		],
 		"rules": {
+			"@stylistic/comma-dangle": 0,
+			"@stylistic/operator-linebreak": 0,
+			"arrow-body-style": 0,
 			"require-atomic-updates": 0,
 			"capitalized-comments": 0,
+			"import-x/extensions": 0,
+			"import-x/no-anonymous-default-export": 0,
+			"import-x/order": 0,
+			"logical-assignment-operators": 0,
+			"n/prefer-global/process": 0,
 			"unicorn/import-index": 0,
+			"unicorn/no-anonymous-default-export": 0,
+			"unicorn/prefer-array-flat": 0,
+			"unicorn/prefer-module": 0,
+			"unicorn/prefer-node-protocol": 0,
+			"unicorn/prefer-spread": 0,
+			"unicorn/prefer-string-replace-all": 0,
+			"unicorn/prefer-top-level-await": 0,
+			"unicorn/prevent-abbreviations": 0,
+			"unicorn/switch-case-braces": 0,
 			"import/extensions": 0,
 			"import/no-useless-path-segments": 0
 		}
