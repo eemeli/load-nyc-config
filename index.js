@@ -77,7 +77,7 @@ async function actualLoad(configFile) {
 			return require('./load-esm')(configFile);
 		case '.yml':
 		case '.yaml':
-			return require('js-yaml').load(await readFile(configFile, 'utf8'));
+			return require('yaml').parse(await readFile(configFile, 'utf8'));
 		default:
 			return JSON.parse(await readFile(configFile, 'utf8'));
 	}

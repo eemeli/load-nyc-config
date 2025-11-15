@@ -25,8 +25,8 @@
 		"camelcase": "^5.3.1",
 		"find-up": "^4.1.0",
 		"get-package-type": "^0.1.0",
-		"js-yaml": "^3.13.1",
-		"resolve-from": "^5.0.0"
+		"resolve-from": "^5.0.0",
+		"yaml": "^2.8.1"
 	},
 	"devDependencies": {
 		"semver": "^6.3.0",
